@@ -1,0 +1,26 @@
+{
+  "name": "webstandr-lb-google",
+  "version": "1.0.0",
+  "description": "Google SERP ONLY: https://webstandr-lb-google.onrender.com",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deviate-dv8/webstandr-lb-google.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deviate-dv8/webstandr-lb-google/issues"
+  },
+  "homepage": "https://github.com/deviate-dv8/webstandr-lb-google#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "morgan": "^1.10.1"
+  }
+}
