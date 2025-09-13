@@ -128,12 +128,12 @@ app.get("/", async (req, res) => {
 
   res.json({
     message: "Server statuses",
+    baseSuccessCount,
+    googleSuccessCount,
     base: {
-      successCount: baseSuccessCount,
       results: formattedBaseResults,
     },
     google: {
-      successCount: googleSuccessCount,
       results: formattedGoogleResults,
     },
   });
