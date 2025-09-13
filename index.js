@@ -26,7 +26,7 @@ const server_google = [
 ];
 
 // Helper function to add a timeout to a fetch request
-const fetchWithTimeout = (url, options, timeout = 30000) => {
+const fetchWithTimeout = (url, options, timeout = 100000) => {
   return Promise.race([
     fetch(url, options),
     new Promise((_, reject) =>
