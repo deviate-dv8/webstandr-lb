@@ -34,8 +34,10 @@ const fetchWithTimeout = (url, options, timeout = 100000) => {
     ),
   ]);
 };
-
-app.get("/", async (req, res) => {
+app.get("/", (req, res) => {
+  res.json({ message: "Webstandr Load Balancer Status" });
+});
+app.get("/stats", async (req, res) => {
   const query = "minecraft"; // Example query
 
   // Fetch promises for base servers
